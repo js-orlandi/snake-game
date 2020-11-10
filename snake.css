@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-color: #000000;
+}
+
+h1 {
+  color: #06fa12;
+  text-transform: uppercase;
+  padding-top: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#root{
+  text-align: center;
+}
+
+.buttons {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  canvas {
+    height: 450px;
+    width: 450px;
+    margin-top: 5px;
+  }
+
+  h1{
+    display: none;
+  }
+  .buttons{
+    display: block;
+    margin-top: 10px;
+    width: 100vw;
+  }
+
+  button{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: #06fa12;
+    background-color: #044204;
+  }
+
+  .div-side {
+    margin: 2px auto;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #restart {
+    display: none;
+  }
+}
